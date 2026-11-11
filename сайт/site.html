@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Симулятор Химика - Смешивание элементов</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+      <a class="logo" href="#top">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 2h6v2H9z"/>
+          <path d="M10 4v6.2L4.7 18.6A2 2 0 0 0 6.4 21h11.2a2 2 0 0 0 1.7-2.4L14 10.2V4h-4zm2 2h2v5l4.9 8H7.1L12 11V6z"/>
+          <path d="M7.6 15h8.8v1.6H7.6z"/>
+        </svg>
+      </span>
+      Симулятор Химика
+    </a>
+    <nav class="nav">
+      <a href="#about">О проекте</a>
+      <a href="#team">Команда</a>
+      <a href="#service">Симулятор</a>
+      <a href="#auth">Скачать</a>
+      <a href="#blog">Блог</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <h1>Симулятор Химика</h1>
+      <p class="hero-text">
+        Интерактивная платформа для изучения химии. Смешивайте элементы, 
+        открывайте новые соединения и понимайте законы химии в игровом формате.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#about">О проекте</a>
+        <a class="btn btn-ghost" href="#service">Попробовать симулятор</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">О проекте</h2>
+      <p class="section-sub">Информация о разработке приложения.</p>
+
+      <div class="about-grid">
+        <article class="info-card">
+          <h3>Название проекта</h3>
+          <p class="project-name">«Симулятор Химика»</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Назначение приложения</h3>
+          <p>
+            Образовательный симулятор, позволяющий пользователям в игровой форме изучать 
+            химические элементы и их взаимодействия. Платформа помогает запомнить таблицу 
+            Менделеева и понять реакции смешивания веществ.
+          </p>
+        </article>
+      </div>
+
+      <div class="team-block" id="team">
+        <div class="team-head">
+          <h3>Команда проекта</h3>
+          <p>Информация о разработчиках (проект 5)</p>
+        </div>
+
+        <div class="team-grid">
+
+          <article class="member">
+            <div class="avatar" data-initials="СИ">
+              <img src="images/Сачков.jpg" alt="Сачков Игорь"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Сачков Игорь</h4>
+            <p class="member-course">4 курс, МОАИС-25</p>
+            <span class="member-role">Проджект-менеджер</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="БД">
+              <img src="images/Баловнев.jpg" alt="Баловнев Даниил"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Баловнев Даниил</h4>
+            <p class="member-course">2 курс, ПМИ-24</p>
+            <span class="member-role">Аналитик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="НА">
+              <img src="images/Наплошкина.jpg" alt="Наплошкина Анастасия"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Наплошкина Анастасия</h4>
+            <p class="member-course">2 курс, ПМИ-25</p>
+            <span class="member-role">Аналитик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="ВЕ">
+              <img src="images/Ветнер.jpg" alt="Ветнер Екатерина"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Ветнер Екатерина</h4>
+            <p class="member-course">3 курс, ПИЭ-23</p>
+            <span class="member-role">Проектировщик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="ПД">
+              <img src="images/Пуртова.jpg" alt="Пуртова Дарья"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Пуртова Дарья</h4>
+            <p class="member-course">4 курс, МОАИС-25</p>
+            <span class="member-role">Проектировщик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="СД">
+              <img src="images/Самаргин.jpg" alt="Самаргин Даниил"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Самаргин Даниил</h4>
+            <p class="member-course">3 курс, МОАИС-23</p>
+            <span class="member-role">Тестировщик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="БА">
+              <img src="images/Барановский.jpg" alt="Барановский Александр"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Барановский Александр</h4>
+            <p class="member-course">2 курс, ПМИ-24</p>
+            <span class="member-role">Тестировщик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="ЛГ">
+              <img src="images/Лесчиков.jpg" alt="Лесчиков Георгий"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Лесчиков Георгий</h4>
+            <p class="member-course">3 курс, ПМИ-23</p>
+            <span class="member-role">Разработчик</span>
+          </article>
+
+          <article class="member">
+            <div class="avatar" data-initials="КА">
+              <img src="images/Критонов.jpg" alt="Критонов Александр"
+                   onerror="this.parentElement.classList.add('no-photo'); this.remove();">
+            </div>
+            <h4 class="member-name">Критонов Александр</h4>
+            <p class="member-course">4 курс, ИВТ-24</p>
+            <span class="member-role">Разработчик</span>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="service">
+    <div class="container">
+      <h2 class="section-title">Симулятор химика</h2>
+      <p class="section-sub">Попробуйте смешать элементы таблицы Менделеева. Выберите два элемента и нажмите кнопку.</p>
+      
+      <div class="chem-simulator">
+        <div class="sim-controls">
+          <div class="sim-group">
+            <label for="element1">Элемент 1</label>
+            <select id="element1" class="sim-select">
+              <option value="">Выберите элемент</option>
+              <option value="H">Водород (H)</option>
+              <option value="O">Кислород (O)</option>
+              <option value="C">Углерод (C)</option>
+              <option value="Na">Натрий (Na)</option>
+              <option value="Cl">Хлор (Cl)</option>
+            </select>
+          </div>
+          
+          <div class="sim-group">
+            <label for="element2">Элемент 2</label>
+            <select id="element2" class="sim-select">
+              <option value="">Выберите элемент</option>
+              <option value="H">Водород (H)</option>
+              <option value="O">Кислород (O)</option>
+              <option value="C">Углерод (C)</option>
+              <option value="Na">Натрий (Na)</option>
+              <option value="Cl">Хлор (Cl)</option>
+            </select>
+          </div>
+
+          <button id="mixBtn" class="sim-btn">Смешать</button>
+        </div>
+
+        <div id="simResult" class="sim-result">
+          Выберите элементы для смешивания
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="auth">
+    <div class="container">
+      <h2 class="section-title">Скачивание самого лучшего симулятора</h2>
+      <p class="section-sub">Исходный код проекта и последние версии доступны в нашем репозитории на GitHub.</p>
+      
+      <div class="github-card">
+        <div class="github-icon">
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+        </div>
+        <div class="github-content">
+          <h3>ChemSimulator</h3>
+          <a href="https://github.com/Lokspocks/ChemSimulator" target="_blank" rel="noopener noreferrer" class="github-btn">
+            Перейти на GitHub
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="blog">
+    <div class="container">
+      <h2 class="section-title">Блог</h2>
+      <p class="section-sub">Обновления и отчёты по разработке проекта.</p>
+
+      <div class="blog-grid" id="blog-grid">
+
+        <article class="blog-post" data-sort="2026-09-04">
+          <div class="blog-head">
+            <span class="blog-date">4 сентября 2026</span>
+            <span class="blog-role">ПМ</span>
+          </div>
+          <h3>Начало работы над проектом</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span><strong>Симулятор Химика</strong></span>
+    <span>Проект по дисциплине «Современные технологии программирования»</span>
+  </div>
+</footer>
+
+<script>
+// Логика симулятора
+document.addEventListener('DOMContentLoaded', () => {
+  const el1 = document.getElementById('element1');
+  const el2 = document.getElementById('element2');
+  const mixBtn = document.getElementById('mixBtn');
+  const resultDiv = document.getElementById('simResult');
+
+  const reactions = {
+    'H-H': { formula: 'H₂', desc: 'Молекула водорода. Газ без цвета и запаха.' },
+    'O-O': { formula: 'O₂', desc: 'Молекула кислорода. Необходим для дыхания.' },
+    'C-C': { formula: 'C', desc: 'Углерод. Простое вещество.' },
+    'Na-Na': { formula: 'Na', desc: 'Металлический натрий. Очень активен.' },
+    'Cl-Cl': { formula: 'Cl₂', desc: 'Молекула хлора. Ядовитый газ желто-зеленого цвета.' },
+    'H-O': { formula: 'H₂O', desc: 'Вода! Универсальный растворитель, основа жизни.' },
+    'H-C': { formula: 'CH₄', desc: 'Метан. Простейший углеводород, основной компонент природного газа.' },
+    'H-Na': { formula: 'NaH', desc: 'Гидрид натрия. Используется в органическом синтезе.' },
+    'H-Cl': { formula: 'HCl', desc: 'Соляная кислота. Сильная кислота, используется в промышленности.' },
+    'O-C': { formula: 'CO₂', desc: 'Углекислый газ. Продукт дыхания и горения.' },
+    'O-Na': { formula: 'Na₂O', desc: 'Оксид натрия. Основный оксид.' },
+    'O-Cl': { formula: 'Cl₂O', desc: 'Оксид хлора(I). Нестабильное соединение.' },
+    'C-Na': { formula: 'Na₂C₂', desc: 'Ацетиленид натрия. Используется в синтезе.' },
+    'C-Cl': { formula: 'CCl₄', desc: 'Тетрахлорметан. Раньше использовался как растворитель.' },
+    'Na-Cl': { formula: 'NaCl', desc: 'Поваренная соль! Необходима для жизни.' }
+  };
+
+  mixBtn.addEventListener('click', () => {
+    const v1 = el1.value;
+    const v2 = el2.value;
+
+    if (!v1 || !v2) {
+      resultDiv.className = 'sim-result error';
+      resultDiv.innerHTML = 'Пожалуйста, выберите оба элемента!';
+      return;
+    }
+
+    const key1 = [v1, v2].sort().join('-');
+    const reaction = reactions[key1];
+
+    if (reaction) {
+      resultDiv.className = 'sim-result success';
+      resultDiv.innerHTML = `
+        <div class="chem-formula">${reaction.formula}</div>
+        <div>${reaction.desc}</div>
+      `;
+    } else {
+      resultDiv.className = 'sim-result error';
+      resultDiv.innerHTML = 'Реакция не найдена или эти элементы не взаимодействуют при данных условиях.';
+    }
+  });
+});
+
+// Логика блога (загрузка отчетов)
+(function(){
+  const monthNames = ['января','февраля','марта','апреля','мая','июня',
+                      'июля','августа','сентября','октября','ноября','декабря'];
+
+  const reports = [
+    { file: '10.09 Отчет предпроектное исследование и спецификация требований.docx', role: 'Аналитик', year: 2026 },
+    { file: '22.09 Проектировка структуры БД.docx', role: 'Проектировщик', year: 2026 },
+    { file: '24.09 Программа приёмочного тестирования.docx', role: 'Аналитик', year: 2026 },
+  ];
+
+  const grid = document.getElementById('blog-grid');
+
+  function parseFileName(name){
+    const base = name.replace(/\.docx$/i, '');
+    const m = base.match(/^(\d{1,2})\.(\d{1,2})\s+(.+)$/);
+    if(!m) return null;
+    return { day: parseInt(m[1],10), month: parseInt(m[2],10), title: m[3].trim() };
+  }
+
+  function buildSortKey(y,m,d){
+    return `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+  }
+
+  function formatDateRu(y,m,d){
+    return `${d} ${monthNames[m-1]} ${y}`;
+  }
+
+  function sortBlog(){
+    const posts = Array.from(grid.querySelectorAll('.blog-post'));
+    posts.sort((a,b) => (a.dataset.sort || '').localeCompare(b.dataset.sort || ''));
+    posts.forEach(p => grid.appendChild(p));
+  }
+
+  function createPost(dateStr, sortKey, role, title, contentNode){
+    const article = document.createElement('article');
+    article.className = 'blog-post';
+    article.dataset.sort = sortKey;
+
+    const head = document.createElement('div');
+    head.className = 'blog-head';
+    const dateEl = document.createElement('span');
+    dateEl.className = 'blog-date';
+    dateEl.textContent = dateStr;
+    const roleEl = document.createElement('span');
+    roleEl.className = 'blog-role';
+    roleEl.textContent = role;
+    head.appendChild(dateEl);
+    head.appendChild(roleEl);
+
+    const titleEl = document.createElement('h3');
+    titleEl.textContent = title;
+
+    article.appendChild(head);
+    article.appendChild(titleEl);
+
+    if(contentNode){
+      const contentEl = document.createElement('div');
+      contentEl.className = 'blog-content';
+      contentEl.appendChild(contentNode);
+      article.appendChild(contentEl);
+    }
+    grid.appendChild(article);
+  }
+
+  function buildUrlCandidates(file){
+    const nfc = file.normalize('NFC');
+    const set = new Set();
+    set.add('reports/' + file);
+    set.add('reports/' + encodeURI(file));
+    set.add('reports/' + encodeURIComponent(file));
+    set.add('reports/' + encodeURIComponent(nfc));
+    set.add('./reports/' + encodeURIComponent(file));
+    return Array.from(set);
+  }
+
+  async function fetchReport(file){
+    const bust = '?v=' + Date.now();
+    for(const base of buildUrlCandidates(file)){
+      try{
+        const res = await fetch(base + bust, { cache: 'no-store' });
+        if(res.ok){
+          const buf = await res.arrayBuffer();
+          if(buf.byteLength > 0) return buf;
+        }
+      }catch(e){}
+    }
+    throw new Error('файл не найден');
+  }
+
+  function waitForMammoth(timeoutMs){
+    return new Promise((resolve) => {
+      const start = Date.now();
+      (function check(){
+        if(typeof window.mammoth !== 'undefined' && window.mammoth.convertToHtml){
+          resolve(window.mammoth);
+        }else if(Date.now() - start > timeoutMs){
+          resolve(null);
+        }else{
+          setTimeout(check, 120);
+        }
+      })();
+    });
+  }
+
+  async function loadReports(){
+    const mammothLib = await waitForMammoth(8000);
+
+    for(const report of reports){
+      const parsed = parseFileName(report.file);
+      if(!parsed) continue;
+
+      const dateStr = formatDateRu(report.year, parsed.month, parsed.day);
+      const sortKey = buildSortKey(report.year, parsed.month, parsed.day);
+
+      const contentEl = document.createElement('div');
+
+      if(!mammothLib){
+        contentEl.innerHTML = '<p style="color:#b00020">Не загрузилась библиотека mammoth.js.</p>';
+        createPost(dateStr, sortKey, report.role, parsed.title, contentEl);
+        continue;
+      }
+
+      try{
+        const buf = await fetchReport(report.file);
+        const result = await mammothLib.convertToHtml({ arrayBuffer: buf });
+        contentEl.innerHTML = result.value;
+      }catch(err){
+        contentEl.innerHTML = '<p style="color:#b00020">Не удалось загрузить отчёт: ' +
+          report.file + '</p>';
+      }
+
+      createPost(dateStr, sortKey, report.role, parsed.title, contentEl);
+    }
+
+    sortBlog();
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', loadReports);
+  }else{
+    loadReports();
+  }
+})();
+</script>
+
+</body>
+</html>
